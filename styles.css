@@ -8,6 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #1c1f24;
+  touch-action: pan-x pan-y;
 }
 
 .header {
