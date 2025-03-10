@@ -1,4 +1,4 @@
-html,
+  html,
 body {
   margin: 0;
   height: 100%;
@@ -53,7 +53,7 @@ body {
 
 .invite img {
     width: 100px;
-    height: 100px;
+    height: 50px;
     border-radius: 50%;
     user-select: none;
 }
