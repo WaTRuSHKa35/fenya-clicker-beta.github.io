@@ -56,6 +56,7 @@ body {
     height: 50px;
     border-radius: 50%;
     user-select: none;
+    position: x=10, y=10;
 }
 
 .plus-one {
