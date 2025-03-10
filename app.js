@@ -15,17 +15,13 @@ function setScore(score) {
 function inviteFriends() {
   // Ссылка на ваш сайт
   const inviteLink = window.location.href; // Текущий URL сайта
-  const message = `Привет! Присоединяйся к моему приложению: ${inviteLink}`;
+  const message = 'Присоединяйся к моему приложению!';
 
-  // Копируем ссылку в буфер обмена
-  navigator.clipboard.writeText(inviteLink)
-    .then(() => {
-      alert('Ссылка скопирована! Отправьте ее друзьям: ' + inviteLink);
-    })
-    .catch(() => {
-      // Если не удалось скопировать, просто показываем ссылку
-      alert('Скопируйте ссылку и отправьте друзьям: ' + inviteLink);
-    });
+  // Создаем ссылку для отправки через Telegram
+  const telegramLink = `https://t.me/share/url?url=${encodeURIComponent(inviteLink)}&text=${encodeURIComponent(message)}`;
+
+  // Открываем ссылку в новой вкладке
+  window.open(telegramLink, '_blank');
 }
 
 //function setImage() {
