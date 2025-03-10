@@ -52,10 +52,9 @@ body {
 }
 
 .invite img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    box-shadow: 0px 0px 16px 0px rgba(138, 143, 254, 0.05);
     user-select: none;
 }
 
