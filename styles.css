@@ -8,7 +8,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #1c1f24;
-  touch-action: pan-x pan-y;
 }
 
 .header {
@@ -46,6 +45,18 @@ body {
   --tiltY: 0deg;
   transform: rotateX(var(--tiltX)) rotateY(var(--tiltY));
   user-select: none;
+}
+
+.invite {
+    position: relative;
+}
+
+.invite img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 16px 0px rgba(138, 143, 254, 0.05);
+    user-select: none;
 }
 
 .plus-one {
