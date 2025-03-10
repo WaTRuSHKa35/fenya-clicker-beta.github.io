@@ -13,17 +13,19 @@ function setScore(score) {
 }
 
 function inviteFriends() {
-  if (window.Telegram && window.Telegram.WebApp) {
-    const webApp = Telegram.WebApp;
+  // Ссылка на ваш сайт
+  const inviteLink = window.location.href; // Текущий URL сайта
+  const message = `Привет! Присоединяйся к моему приложению: ${inviteLink}`;
 
-    const inviteLink = `https://watrushka35.github.io/fenya-clicker-beta.github.io/`;
-    const message = `Привет! Присоединяйся к моему приложению: ${inviteLink}`;
-
-    webApp.sendData(message);
-    webApp.close();
-  } else {
-    alert('Этот функционал доступен только внутри Telegram Web App.');
-  }
+  // Копируем ссылку в буфер обмена
+  navigator.clipboard.writeText(inviteLink)
+    .then(() => {
+      alert('Ссылка скопирована! Отправьте ее друзьям: ' + inviteLink);
+    })
+    .catch(() => {
+      // Если не удалось скопировать, просто показываем ссылку
+      alert('Скопируйте ссылку и отправьте друзьям: ' + inviteLink);
+    });
 }
 
 //function setImage() {
