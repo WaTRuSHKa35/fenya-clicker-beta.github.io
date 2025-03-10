@@ -13,9 +13,9 @@ function setScore(score) {
 }
 
 function inviteFriends() {
-  // Ссылка на ваш сайт
-  const inviteLink = 'https://watrushka35.github.io/fenya-clicker-beta.github.io/';
-  const message = 'Присоединяйся к моему приложению!';
+  // Ссылка на ваш Telegram Web App
+  const inviteLink = 'https://t.me/FenyaCoin_bot/FenyaClicker'; // Ваш Web App
+  const message = 'Привет! Присоединяйся к моему приложению: ' + inviteLink;
 
   // Создаем ссылку для отправки через Telegram
   const telegramLink = `https://t.me/share/url?url=${encodeURIComponent(inviteLink)}&text=${encodeURIComponent(message)}`;
