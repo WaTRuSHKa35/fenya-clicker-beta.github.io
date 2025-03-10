@@ -11,9 +11,21 @@ function setScore(score) {
   $score.textContent = score
 }
 
+document.addEventListener('wheel', function(event) {
+  if (event.ctrlKey) {
+    event.preventDefault();
+  }
+}, { passive: false });
+
+document.addEventListener('touchmove', function(event) {
+  if (event.scale !== 1) {
+    event.preventDefault();
+  }
+}, { passive: false });
+
 //function setImage() {
   //if (getScore() >= 1000) {
-    //$circle.setAttribute('src', './assets/lizzard.png')
+    //$circle.setAttribute('src', './assets/.png')
   //}
 //}
 
