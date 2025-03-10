@@ -15,7 +15,7 @@ function setScore(score) {
 function inviteFriends() {
   // Ссылка на ваш Telegram Web App
   const inviteLink = 'https://t.me/FenyaCoin_bot/FenyaClicker'; // Ваш Web App
-  const message = 'Привет! Присоединяйся к моему приложению: ' + inviteLink;
+  const message = 'Привет! Присоединяйся и кликай свои Fenya Coin-ы со всеми: ' + inviteLink;
 
   // Создаем ссылку для отправки через Telegram
   const telegramLink = `https://t.me/share/url?url=${encodeURIComponent(inviteLink)}&text=${encodeURIComponent(message)}`;
